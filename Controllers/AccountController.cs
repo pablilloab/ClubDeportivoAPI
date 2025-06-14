@@ -1,7 +1,6 @@
 ﻿using ClubDeportivoAPI.Dtos.Account;
 using ClubDeportivoAPI.Interfaces;
 using ClubDeportivoAPI.Models;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +8,7 @@ using System.Runtime;
 
 namespace ClubDeportivoAPI.Controllers 
 {
-    [Microsoft.AspNetCore.Components.Route("api/account")]
+    [Route("api/account")]
     [ApiController]
     public class AccountController : Controller
     {
