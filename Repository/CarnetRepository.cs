@@ -24,7 +24,7 @@ namespace ClubDeportivoAPI.Repository
         public async Task<Carnet> DeleteCarnetAsync(int carnetId)
         {
             var carnet = await _context.Carnets.FindAsync(carnetId);
-            if (carnet != null)
+            if (carnet == null)
             {
                 return null;
             }
@@ -43,7 +43,7 @@ namespace ClubDeportivoAPI.Repository
         public async Task<Carnet> GetCarnetByIdAsync(int carnetId)
         {
             var carnet = await _context.Carnets.FindAsync(carnetId);
-            if (carnet != null)
+            if (carnet == null)
             {
                 return null;
             }
